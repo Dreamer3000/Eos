@@ -1,8 +1,9 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="main.css"/>
-        <script src = "main.js"> </script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
         <title>
         Eos - Oscer for Simps
         </title>
@@ -16,9 +17,28 @@
             </ul>
         </div>
 
-        <div class = "Canvas">
-            <div class = "CanvasSelect"> 
-                <img src = "Eos_Assets/Carbon.png" class = "Icon">
+        <div class = "Canvas" id = "Canvas" > <!-- 'event' in PlaceElement is a built in context variable, like ctx from dicord.py-->
+            <div class = "CanvasSelect" id = "CanvasSelect"> 
+                <span class = "Element" id = "C" onclick = "SelectElement(this)"> C </span> <!-- 'this' passes the html between the tags to the function-->
+                <span class = "Element" id = "H" onclick = "SelectElement(this)"> H </span>
+                <span class = "Element" id = "O" onclick = "SelectElement(this)"> O </span>
+                <span class = "Element" id = "N" onclick = "SelectElement(this)"> N </span>
+                <span class = "Element" id = "Li" onclick = "SelectElement(this)"> Li </span>
+                <span class = "Element" id = "F" onclick = "SelectElement(this)"> F </span>
+                <span class = "Element" id = "Cl" onclick = "SelectElement(this)"> Cl </span>
+                <span class = "Element" id = "Br" onclick = "SelectElement(this)"> Br </span>
+                <span class = "Element" id = "I" onclick = "SelectElement(this)"> I </span>
+                <span class = "Element" id = "Mg" onclick = "SelectElement(this)"> Mg </span>
+                <span class = "Element" id = "P" onclick = "SelectElement(this)"> P </span>
+            </div>
+            <div class = "CanvasSelect2" id = "CanvasSelect2">
+                <span class = "ReactionArrow" id = "→" onclick = "SelectElement(this)"> → </span>
+                <span class = "Element" id = "CurvedArrowNormal"> ↷ </span>
+            </div>
+
+
+            
+            <div class = "DrawableSpace" id = "DrawableSpace">
 
             </div>
         </div>
@@ -26,6 +46,7 @@
 
     </br>
     </br>
+    <script src = "main.js"> </script>
     </body>
 </html>
 

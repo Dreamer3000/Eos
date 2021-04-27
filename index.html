@@ -1,8 +1,7 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="main.css"/>
-        <script src = "main.js"> </script>
         <title>
         Eos - Oscer for Simps
         </title>
@@ -10,9 +9,9 @@
     <body>
         <div class = "Nav">
             <ul>
-                <li> <a href = "index.html"> Home </a> </li>
-                <li> <a href = "Syn.html"> <img src = "Eos_Assets/beaker.png" class = "NavIcon"> </a> </li>
-                <li> <a href = "Notes.html"> Notes </a> </li>
+                <li> <a href class = "Navpadding" href= "index.html"> Home </a> </li>
+                <li> <a class = "Navpadding" href = "Syn.html"> <img src = "Eos_Assets/beaker.png" class = "NavIcon"> </a> </li>
+                <li> <a class = "Navpadding" href = "Notes.html"> Notes </a> </li>
             </ul>
         </div>
 
@@ -21,11 +20,39 @@
 
         <div class = "Title">
             <h1> Eos </h1>
-        </div>   
+        </div> 
+            <h2> <i> Molecular Synthesis Made Easy </i></h2>
+    </br>   
+    </br>
+    </br>
+        <div class = "Welcome">
+            <p> <i> "If you want something fixed, it'd be faster to do it yourself"</i></p>
+            </br>
+            </br>
+            </br>
+            <p> It's easy to complain about design and usability of an app when you're the end-user, 
+                so I wondered what it's like to look at from the other side. At Stony Brook University,
+                my Organic Chemistry professor made his own web-app to handle all homework, tests and problems
+                students learn about throughout many different courses. Despite that, there always seems to 
+                be something 'missing', something the script isn't designed to do and hinders progression.
+                I wondered what it'd be like to make my own version of this web-app, Oscer, and if I could
+                improve upon the inconveniences that come with it. Eos is my take on organic synthesis and all
+                the annoyances that come with it. </br>
+                Sufficient to say, Dr. Lauer deserves far more credit than he's been given.
+            </p>
+            </br>
+            </br>
+            
+             <p> <i> This is an ongoing build of a personal project of mine, features increase as I continue
+                 to make them. To see the latest public version of Eos,</br>
+                <a class = "github" href = "https://github.com/Dreamer3000/Eos">visit github</a> for source code and documentation
+             </i></p>
+        </div>
 
         <div class = "InitButton">
             <button type = "button" onclick = "ChangeLower()"> Bake </button>
         </div>
         <p id = "Reveal"> </p>
+        <script src = "main.js"> </script>
     </body>
 </html>
